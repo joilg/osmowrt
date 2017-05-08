@@ -1,0 +1,10 @@
+--- a/openbsc/src/utils/isdnsync.c
++++ b/openbsc/src/utils/isdnsync.c
+@@ -27,6 +27,7 @@
+ #include <fcntl.h>
+ #include <errno.h>
+ #include <sys/socket.h>
++#include <sys/types.h> 
+ #include "mISDNif.h"
+ #define MISDN_OLD_AF_COMPATIBILITY
+ #define AF_COMPATIBILITY_FUNC

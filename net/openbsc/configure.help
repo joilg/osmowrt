@@ -1,0 +1,175 @@
+/home/iam/build/lede/build_dir/target-arm_cortex-a9+neon_musl_eabi/openbsc-6d8e5198ad17e70f27010dbf7c86d25477de90e1-0.15/openbsc$ ./configure --help
+`configure' configures openbsc 0.15 to adapt to many kinds of systems.
+
+Usage: ./configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking ...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR            user executables [EPREFIX/bin]
+  --sbindir=DIR           system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR        program executables [EPREFIX/libexec]
+  --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --libdir=DIR            object code libraries [EPREFIX/lib]
+  --includedir=DIR        C header files [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc [/usr/include]
+  --datarootdir=DIR       read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR           read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR           info documentation [DATAROOTDIR/info]
+  --localedir=DIR         locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR            man documentation [DATAROOTDIR/man]
+  --docdir=DIR            documentation root [DATAROOTDIR/doc/openbsc]
+  --htmldir=DIR           html documentation [DOCDIR]
+  --dvidir=DIR            dvi documentation [DOCDIR]
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+Program names:
+  --program-prefix=PREFIX            prepend PREFIX to installed program names
+  --program-suffix=SUFFIX            append SUFFIX to installed program names
+  --program-transform-name=PROGRAM   run sed PROGRAM on installed program names
+
+Optional Features:
+  --disable-option-checking  ignore unrecognized --enable/--with options
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --enable-silent-rules   less verbose build output (undo: "make V=1")
+  --disable-silent-rules  verbose build output (undo: "make V=0")
+  --enable-dependency-tracking
+                          do not reject slow dependency extractors
+  --disable-dependency-tracking
+                          speeds up one-time build
+  --enable-nat            Build the BSC NAT. Requires SCCP
+  --enable-osmo-bsc       Build the Osmo BSC
+  --enable-smpp           Build the SMPP interface
+  --enable-mgcp-transcoding
+                          Build the MGCP gateway with internal transcoding
+                          enabled.
+  --enable-iu             Build 3G support, aka IuPS and IuCS interfaces
+  --enable-coverage       enable code coverage support [default=no]
+  --enable-vty-tests      Include the VTY/CTRL tests in make check
+                          (deprecated) [default=no]
+  --enable-external-tests Include the VTY/CTRL tests in make check
+                          [default=no]
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-g729             Enable G.729 encoding/decoding.
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  PKG_CONFIG  path to pkg-config utility
+  PKG_CONFIG_PATH
+              directories to add to pkg-config's search path
+  PKG_CONFIG_LIBDIR
+              path overriding pkg-config's built-in search path
+  LIBOSMOCORE_CFLAGS
+              C compiler flags for LIBOSMOCORE, overriding pkg-config
+  LIBOSMOCORE_LIBS
+              linker flags for LIBOSMOCORE, overriding pkg-config
+  LIBOSMOVTY_CFLAGS
+              C compiler flags for LIBOSMOVTY, overriding pkg-config
+  LIBOSMOVTY_LIBS
+              linker flags for LIBOSMOVTY, overriding pkg-config
+  LIBOSMOCTRL_CFLAGS
+              C compiler flags for LIBOSMOCTRL, overriding pkg-config
+  LIBOSMOCTRL_LIBS
+              linker flags for LIBOSMOCTRL, overriding pkg-config
+  LIBOSMOGSM_CFLAGS
+              C compiler flags for LIBOSMOGSM, overriding pkg-config
+  LIBOSMOGSM_LIBS
+              linker flags for LIBOSMOGSM, overriding pkg-config
+  LIBOSMOABIS_CFLAGS
+              C compiler flags for LIBOSMOABIS, overriding pkg-config
+  LIBOSMOABIS_LIBS
+              linker flags for LIBOSMOABIS, overriding pkg-config
+  LIBOSMOGB_CFLAGS
+              C compiler flags for LIBOSMOGB, overriding pkg-config
+  LIBOSMOGB_LIBS
+              linker flags for LIBOSMOGB, overriding pkg-config
+  LIBOSMONETIF_CFLAGS
+              C compiler flags for LIBOSMONETIF, overriding pkg-config
+  LIBOSMONETIF_LIBS
+              linker flags for LIBOSMONETIF, overriding pkg-config
+  LIBCRYPTO_CFLAGS
+              C compiler flags for LIBCRYPTO, overriding pkg-config
+  LIBCRYPTO_LIBS
+              linker flags for LIBCRYPTO, overriding pkg-config
+  LIBOSMOSCCP_CFLAGS
+              C compiler flags for LIBOSMOSCCP, overriding pkg-config
+  LIBOSMOSCCP_LIBS
+              linker flags for LIBOSMOSCCP, overriding pkg-config
+  LIBSMPP34_CFLAGS
+              C compiler flags for LIBSMPP34, overriding pkg-config
+  LIBSMPP34_LIBS
+              linker flags for LIBSMPP34, overriding pkg-config
+  LIBBCG729_CFLAGS
+              C compiler flags for LIBBCG729, overriding pkg-config
+  LIBBCG729_LIBS
+              linker flags for LIBBCG729, overriding pkg-config
+  LIBASN1C_CFLAGS
+              C compiler flags for LIBASN1C, overriding pkg-config
+  LIBASN1C_LIBS
+              linker flags for LIBASN1C, overriding pkg-config
+  LIBOSMORANAP_CFLAGS
+              C compiler flags for LIBOSMORANAP, overriding pkg-config
+  LIBOSMORANAP_LIBS
+              linker flags for LIBOSMORANAP, overriding pkg-config
+  LIBOSMOSIGTRAN_CFLAGS
+              C compiler flags for LIBOSMOSIGTRAN, overriding pkg-config
+  LIBOSMOSIGTRAN_LIBS
+              linker flags for LIBOSMOSIGTRAN, overriding pkg-config
+  LIBGTP_CFLAGS
+              C compiler flags for LIBGTP, overriding pkg-config
+  LIBGTP_LIBS linker flags for LIBGTP, overriding pkg-config
+  LIBCARES_CFLAGS
+              C compiler flags for LIBCARES, overriding pkg-config
+  LIBCARES_LIBS
+              linker flags for LIBCARES, overriding pkg-config
+  CPP         C preprocessor
+  SQLITE3_CFLAGS
+              C compiler flags for SQLITE3, overriding pkg-config
+  SQLITE3_LIBS
+              linker flags for SQLITE3, overriding pkg-config
+  PYTHON      the Python interpreter
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to <openbsc@lists.osmocom.org>.

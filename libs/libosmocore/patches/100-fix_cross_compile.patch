@@ -1,0 +1,12 @@
+-- a/src/backtrace.c
++++ b/src/backtrace.c
+@@ -30,7 +30,7 @@
+ #include <osmocom/core/logging.h>
+ #include "config.h"
+ 
+-#ifdef HAVE_EXECINFO_H
++#if 0
+ #include <execinfo.h>
+ 
+ static void _osmo_backtrace(int use_printf, int subsys, int level)
+

@@ -1,0 +1,12 @@
+--- a/openbsc/git-version-gen
++++ b/openbsc/git-version-gen
+@@ -141,7 +141,8 @@
+ esac
+ 
+ # Omit the trailing newline, so that m4_esyscmd can use the result directly.
+-echo "$v" | tr -d '\012'
++(cd .. && echo ${PWD##*-} | tr -d '\012')
++
+ 
+ # Local variables:
+ # eval: (add-hook 'write-file-hooks 'time-stamp)
